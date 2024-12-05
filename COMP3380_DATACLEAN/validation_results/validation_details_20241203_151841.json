@@ -1,0 +1,121 @@
+{
+  "summary": {
+    "total_tables_checked": 4,
+    "tables_with_issues": 2,
+    "total_record_mismatches": 0,
+    "column_match_rates": {
+      "Play": 100.0,
+      "Tackles": 100.0
+    }
+  },
+  "details": {
+    "Game": {
+      "error": "`np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead."
+    },
+    "Player": {
+      "error": "time data \"03/10/1992\" doesn't match format \"%Y-%m-%d\", at position 261. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;\n    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this."
+    },
+    "Play": {
+      "record_count_match": true,
+      "csv_count": 12486,
+      "db_count": 12486,
+      "column_matches": {
+        "playId": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        },
+        "yardsToGo": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        },
+        "gameId": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        },
+        "playResult": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        },
+        "passProbability": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        },
+        "down": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        },
+        "quarter": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        },
+        "possessionTeam": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        },
+        "ballCarrierId": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        },
+        "expectedPoints": {
+          "match_percentage": 100.0,
+          "matches": 12486,
+          "total": 12486
+        }
+      },
+      "sample_mismatches": []
+    },
+    "Tackles": {
+      "record_count_match": true,
+      "csv_count": 17426,
+      "db_count": 17426,
+      "column_matches": {
+        "nflId": {
+          "match_percentage": 100.0,
+          "matches": 17426,
+          "total": 17426
+        },
+        "playId": {
+          "match_percentage": 100.0,
+          "matches": 17426,
+          "total": 17426
+        },
+        "gameId": {
+          "match_percentage": 100.0,
+          "matches": 17426,
+          "total": 17426
+        },
+        "missedTackle": {
+          "match_percentage": 100.0,
+          "matches": 17426,
+          "total": 17426
+        },
+        "tackle": {
+          "match_percentage": 100.0,
+          "matches": 17426,
+          "total": 17426
+        },
+        "assist": {
+          "match_percentage": 100.0,
+          "matches": 17426,
+          "total": 17426
+        },
+        "forcedFumble": {
+          "match_percentage": 100.0,
+          "matches": 17426,
+          "total": 17426
+        }
+      },
+      "sample_mismatches": []
+    }
+  },
+  "timestamp": "2024-12-03T15:18:41.789963"
+}

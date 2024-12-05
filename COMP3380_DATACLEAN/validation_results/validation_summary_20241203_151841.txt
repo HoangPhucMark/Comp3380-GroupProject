@@ -1,0 +1,51 @@
+NFL Database Validation Summary
+============================
+
+Tables Checked: 4
+Tables with Issues: 2
+Total Record Mismatches: 0
+
+
+Table: Game
+===========
+Error: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.
+
+Table: Player
+=============
+Error: time data "03/10/1992" doesn't match format "%Y-%m-%d", at position 261. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+
+Table: Play
+===========
+Record count match: True
+CSV records: 12486
+DB records: 12486
+
+Column Match Rates:
+- playId: 100.00%
+- yardsToGo: 100.00%
+- gameId: 100.00%
+- playResult: 100.00%
+- passProbability: 100.00%
+- down: 100.00%
+- quarter: 100.00%
+- possessionTeam: 100.00%
+- ballCarrierId: 100.00%
+- expectedPoints: 100.00%
+
+Table: Tackles
+==============
+Record count match: True
+CSV records: 17426
+DB records: 17426
+
+Column Match Rates:
+- nflId: 100.00%
+- playId: 100.00%
+- gameId: 100.00%
+- missedTackle: 100.00%
+- tackle: 100.00%
+- assist: 100.00%
+- forcedFumble: 100.00%
